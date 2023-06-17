@@ -10,7 +10,6 @@ router.get("/", async (req, res) => {
   try {
     const accessToken = await authenticate();
     const accounts = await accountRequest(accessToken);
-    const pagination = accounts.pagination;
 
     const roundedSum = calculateTotalBalance(accounts);
     const filteredAccounts = accounts.resources.map((account) => {
@@ -24,7 +23,6 @@ router.get("/", async (req, res) => {
     const response = {
       rounded_sum: roundedSum,
       accounts: filteredAccounts,
-      pagination: pagination,
     };
 
     res.json(response);
