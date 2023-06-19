@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.container {
+  display: flex;
+  gap: 8px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  padding: 16px;
+  color: #00213c;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .wrapper {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  h1 {
+    background-color: #50baff;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  button {
+    text-decoration: none;
+    width: 100%;
+    background-color: #6562fd;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-family: "Open Sans";
+    margin-top: 4px;
+    cursor: pointer;
+  }
+  .buttonStatic {
+    text-decoration: none;
+    width: 100%;
+    background-color: #6562fd;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-family: "Open Sans";
+  }
+}
